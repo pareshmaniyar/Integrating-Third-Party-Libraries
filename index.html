@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hi</h1>
+
+<p>Jai bajrang bali</p>
+<button onclick="testPromise()">Click Me</button>
+<div id='log'></div>
+<div class="beforeend"></div>
+<script>
+    var x=0;
+    function testPromise() {
+        let l = x;
+        x= x+1;
+        let log = document.getElementById('log');
+        log.insertAdjacentHTML('beforeend', l + ' ' + '. Declared<br/>');
+        new Promise (
+            (resolve, reject) => {
+                log.insertAdjacentHTML('beforeend', l + ' ' + '. Initialized<br/>');
+                window.setTimeout(()=> {resolve(l)}, 3000);
+            }
+        )
+        .then(
+            (previousl) => {
+                log.insertAdjacentHTML('beforeend', previousl + '. Fullfilled<br/>');
+            }
+        )
+        .catch(
+            (reject)=> {
+                console.log(reject);
+            }
+        );
+        log.insertAdjacentHTML('beforeend', l + ' . Method after the promise was initialised<br/>');
+    }
+</script>
+</body>
+</html>

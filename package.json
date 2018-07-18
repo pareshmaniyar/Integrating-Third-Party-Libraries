@@ -4,7 +4,7 @@
   "description": "\"Learning Third Party Libraries\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "app.js"
   },
   "author": "Paresh Maniyar",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "bunyan": "^1.8.12",
     "cors": "^2.8.4",
     "express": "^4.16.3",
-    "express-fileupload": "^0.4.0"
+    "express-fileupload": "^0.4.0",
+    "helmet": "^3.12.1"
   }
 }
