@@ -1,17 +1,17 @@
-<!-- Bluebird -->
+#bluebird
 For promises
-<!-- body-parser -->
+#body-parser
 For converting request messages to JSON and output it to req.body
-<!-- bunyan -->
+#bunyan
 For JSON logger
-<!-- cors -->
+#cors
 For Cross-origin resource sharing WIP:
-<!-- debug -->
+#debug
 For Debugging different modules
 https://github.com/visionmedia/debug
-<!-- express-fileupload -->
+#express-fileupload
 For uploading files
 https://github.com/richardgirges/express-fileupload
-<!-- express-jwt -->
+#express-jwt
 For JWT token
 https://github.com/auth0/express-jwt
